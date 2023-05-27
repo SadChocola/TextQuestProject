@@ -1,0 +1,95 @@
+/* ------------Text Quest */
+
+body {
+    color: white;
+    background-color: black;
+    font-size: 1.6em;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+#images {
+    height: 650px;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 1em;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#btnbox {
+    text-align: center;
+}
+
+button {
+    background-color: #bdbaba;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.box {
+    display: none;
+}
+
+.box_active {
+    display: block;
+}
+
+/* ----------------Tic-Tac-Toe */
+
+.app {
+    width: 640px;
+    height: 480px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app_block {
+    border: 2px solid black;
+    width: 200px;
+    height: 130px;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.app_block.active {
+    cursor: default;
+}
+
+.app_block.active.active_o {
+    color: #bdbaba;
+}
+
+.app_block.active.active_x {
+    color: #994242;
+}
+
+.activeApp {
+    display: flex;
+}
+
+.activeBody {
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(50%);
+}
